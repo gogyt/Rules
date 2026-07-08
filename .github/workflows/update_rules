@@ -1,0 +1,164 @@
+name: Auto Update Remote Files
+
+on:
+  schedule:
+    - cron: '30 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Download
+        run: |
+          # 格式: 相对仓库根目录的文件路径|URL
+          LISTS=(
+
+            "rules/geosite/cn.mrs|https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.mrs"
+            "rules/geosite/cn.yaml|https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.yaml"
+            
+            "rules/geoip/cn.mrs|https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.mrs"
+            "rules/geoip/cn.yaml|https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.yaml"
+
+            "rules/geosite/google-gemini.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google-gemini.mrs"
+            "rules/geosite/google-gemini.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google-gemini.yaml"
+
+
+
+            "rules/geoip/cloudflare.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cloudflare.mrs"
+            "rules/geoip/cloudflare.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cloudflare.yaml"
+
+            "rules/geosite/cloudflare.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cloudflare.mrs"
+            "rules/geosite/cloudflare.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cloudflare.yaml"
+
+
+
+            "rules/geosite/youtube.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.mrs"
+            "rules/geosite/youtube.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.yaml"
+
+
+
+            "rules/geosite/github.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.mrs"
+            "rules/geosite/github.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.yaml"
+
+
+
+            "rules/geosite/steam@cn.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam@cn.mrs"
+            "rules/geosite/steam@cn.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam@cn.yaml"
+
+            "rules/geosite/steam.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam.mrs"
+            "rules/geosite/steam.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam.yaml"
+
+
+
+            "rules/geoip/google.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs"
+            "rules/geoip/google.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.yaml"
+
+            "rules/geosite/google.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs"
+            "rules/geosite/google.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.yaml"
+
+
+
+            "rules/geosite/openai.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.mrs"
+            "rules/geosite/openai.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.yaml"
+
+
+
+            "rules/geosite/tiktok.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/tiktok.mrs"
+            "rules/geosite/tiktok.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/tiktok.yaml"
+
+
+
+            "rules/geosite/spotify.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/spotify.mrs"
+            "rules/geosite/spotify.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/spotify.yaml"
+
+
+
+            "rules/geosite/discord.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/discord.mrs"
+            "rules/geosite/discord.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/discord.yaml"
+
+
+
+            "rules/geoip/private.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs"
+            "rules/geoip/private.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.yaml"
+
+            "rules/geosite/private.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/private.mrs"
+            "rules/geosite/private.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/private.yaml"
+
+
+
+            "rules/geosite/microsoft.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.mrs"
+            "rules/geosite/microsoft.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.yaml"
+
+
+
+            "rules/geoip/telegram.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs"
+            "rules/geoip/telegram.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.yaml"
+
+            "rules/geosite/telegram.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/telegram.mrs"
+            "rules/geosite/telegram.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/telegram.yaml"
+
+
+
+            "rules/geosite/category-media.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-media.mrs"
+            "rules/geosite/category-media.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-media.yaml"
+            
+
+
+            "rules/geosite/apple.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.mrs"
+            "rules/geosite/apple.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.yaml"
+
+
+
+            "rules/geosite/netflix.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/netflix.mrs"
+            "rules/geosite/netflix.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/netflix.yaml"
+
+            "rules/geoip/netflix.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/netflix.mrs"
+            "rules/geoip/netflix.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/netflix.yaml"
+
+
+
+            "rules/geosite/instagram.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/instagram.mrs"
+            "rules/geosite/instagram.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/instagram.yaml"
+
+
+          )
+
+          for jntm in "${LISTS[@]}"; do
+            IFS="|" read -r filepath url <<< "$jntm"
+            echo "Processing $filepath..."
+            
+            # 获取文件所在的父目录路径
+            filedir=$(dirname "$filepath")
+            
+            # 如果目录不存在，则递归创建该目录
+            if [ "$filedir" != "." ]; then
+              mkdir -p "$filedir"
+            fi
+
+            # 下载文件到指定位置
+            curl -sfL "$url" -o "$filepath" || echo "Failed to download $filepath"
+          done
+
+      - name: global config
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: commit
+        id: commit
+        run: |
+          # 暂存当前目录下所有发生变化的文件（包括新创建的多级目录和文件）
+          git add .
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "auto update rules $(date +'%Y-%m-%d %H:%M:%S')"
+            git push
+          fi
