@@ -66,8 +66,8 @@ jobs:
             "geo/geosite/github.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.mrs"
             "geo/geosite/github.list|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.list"
 
-            "geo/geosite/Speedtest.mrs|https://github.com/666OS/rules/blob/release/mihomo/domain/Speedtest.mrs"
-            "geo/geosite/Speedtest.txt|https://github.com/666OS/rules/blob/release/mihomo/domain/Speedtest.txt"
+            "geo/geosite/Speedtest.mrs|https://github.com/666OS/rules/raw/release/mihomo/domain/Speedtest.mrs"
+            "geo/geosite/Speedtest.txt|https://github.com/666OS/rules/raw/release/mihomo/domain/Speedtest.txt"
 
             "geo/geosite/category-speedtest.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-speedtest.mrs"
             "geo/geosite/category-speedtest.list|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-speedtest.list"
