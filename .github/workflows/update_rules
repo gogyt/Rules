@@ -20,112 +20,112 @@ jobs:
           # 格式: 相对仓库根目录的文件路径|URL
           LISTS=(
 
-            "rules/geosite/cn.mrs|https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.mrs"
-            "rules/geosite/cn.yaml|https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.yaml"
+            "GEO/geosite/cn.mrs|https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.mrs"
+            "GEO/geosite/cn.yaml|https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.yaml"
             
-            "rules/geoip/cn.mrs|https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.mrs"
-            "rules/geoip/cn.yaml|https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.yaml"
+            "GEO/geoip/cn.mrs|https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.mrs"
+            "GEO/geoip/cn.yaml|https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.yaml"
 
-            "rules/geosite/google-gemini.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google-gemini.mrs"
-            "rules/geosite/google-gemini.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google-gemini.yaml"
-
-
-
-            "rules/geoip/cloudflare.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cloudflare.mrs"
-            "rules/geoip/cloudflare.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cloudflare.yaml"
-
-            "rules/geosite/cloudflare.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cloudflare.mrs"
-            "rules/geosite/cloudflare.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cloudflare.yaml"
+            "GEO/geosite/google-gemini.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google-gemini.mrs"
+            "GEO/geosite/google-gemini.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google-gemini.yaml"
 
 
 
-            "rules/geosite/youtube.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.mrs"
-            "rules/geosite/youtube.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.yaml"
+            "GEO/geoip/cloudflare.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cloudflare.mrs"
+            "GEO/geoip/cloudflare.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cloudflare.yaml"
+
+            "GEO/geosite/cloudflare.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cloudflare.mrs"
+            "GEO/geosite/cloudflare.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cloudflare.yaml"
 
 
 
-            "rules/geosite/github.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.mrs"
-            "rules/geosite/github.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.yaml"
+            "GEO/geosite/youtube.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.mrs"
+            "GEO/geosite/youtube.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.yaml"
 
 
 
-            "rules/geosite/steam@cn.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam@cn.mrs"
-            "rules/geosite/steam@cn.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam@cn.yaml"
-
-            "rules/geosite/steam.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam.mrs"
-            "rules/geosite/steam.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam.yaml"
+            "GEO/geosite/github.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.mrs"
+            "GEO/geosite/github.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.yaml"
 
 
 
-            "rules/geoip/google.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs"
-            "rules/geoip/google.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.yaml"
+            "GEO/geosite/steam@cn.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam@cn.mrs"
+            "GEO/geosite/steam@cn.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam@cn.yaml"
 
-            "rules/geosite/google.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs"
-            "rules/geosite/google.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.yaml"
-
-
-
-            "rules/geosite/openai.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.mrs"
-            "rules/geosite/openai.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.yaml"
+            "GEO/geosite/steam.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam.mrs"
+            "GEO/geosite/steam.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam.yaml"
 
 
 
-            "rules/geosite/tiktok.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/tiktok.mrs"
-            "rules/geosite/tiktok.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/tiktok.yaml"
+            "GEO/geoip/google.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs"
+            "GEO/geoip/google.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.yaml"
+
+            "GEO/geosite/google.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs"
+            "GEO/geosite/google.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.yaml"
 
 
 
-            "rules/geosite/spotify.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/spotify.mrs"
-            "rules/geosite/spotify.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/spotify.yaml"
+            "GEO/geosite/openai.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.mrs"
+            "GEO/geosite/openai.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.yaml"
 
 
 
-            "rules/geosite/discord.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/discord.mrs"
-            "rules/geosite/discord.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/discord.yaml"
+            "GEO/geosite/tiktok.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/tiktok.mrs"
+            "GEO/geosite/tiktok.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/tiktok.yaml"
 
 
 
-            "rules/geoip/private.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs"
-            "rules/geoip/private.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.yaml"
-
-            "rules/geosite/private.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/private.mrs"
-            "rules/geosite/private.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/private.yaml"
+            "GEO/geosite/spotify.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/spotify.mrs"
+            "GEO/geosite/spotify.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/spotify.yaml"
 
 
 
-            "rules/geosite/microsoft.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.mrs"
-            "rules/geosite/microsoft.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.yaml"
+            "GEO/geosite/discord.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/discord.mrs"
+            "GEO/geosite/discord.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/discord.yaml"
 
 
 
-            "rules/geoip/telegram.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs"
-            "rules/geoip/telegram.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.yaml"
+            "GEO/geoip/private.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs"
+            "GEO/geoip/private.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.yaml"
 
-            "rules/geosite/telegram.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/telegram.mrs"
-            "rules/geosite/telegram.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/telegram.yaml"
+            "GEO/geosite/private.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/private.mrs"
+            "GEO/geosite/private.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/private.yaml"
 
 
 
-            "rules/geosite/category-media.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-media.mrs"
-            "rules/geosite/category-media.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-media.yaml"
+            "GEO/geosite/microsoft.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.mrs"
+            "GEO/geosite/microsoft.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.yaml"
+
+
+
+            "GEO/geoip/telegram.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs"
+            "GEO/geoip/telegram.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.yaml"
+
+            "GEO/geosite/telegram.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/telegram.mrs"
+            "GEO/geosite/telegram.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/telegram.yaml"
+
+
+
+            "GEO/geosite/category-media.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-media.mrs"
+            "GEO/geosite/category-media.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-media.yaml"
             
 
 
-            "rules/geosite/apple.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.mrs"
-            "rules/geosite/apple.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.yaml"
+            "GEO/geosite/apple.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.mrs"
+            "GEO/geosite/apple.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.yaml"
 
 
 
-            "rules/geosite/netflix.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/netflix.mrs"
-            "rules/geosite/netflix.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/netflix.yaml"
+            "GEO/geosite/netflix.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/netflix.mrs"
+            "GEO/geosite/netflix.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/netflix.yaml"
 
-            "rules/geoip/netflix.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/netflix.mrs"
-            "rules/geoip/netflix.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/netflix.yaml"
+            "GEO/geoip/netflix.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/netflix.mrs"
+            "GEO/geoip/netflix.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/netflix.yaml"
 
 
 
-            "rules/geosite/instagram.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/instagram.mrs"
-            "rules/geosite/instagram.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/instagram.yaml"
+            "GEO/geosite/instagram.mrs|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/instagram.mrs"
+            "GEO/geosite/instagram.yaml|https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/instagram.yaml"
 
 
           )
