@@ -3,7 +3,6 @@ name: Auto Update Remote Files
 on:
   schedule:
     - cron: '30 7 * * *'
-      timezone: 'Asia/Shanghai'
   workflow_dispatch:
 
 permissions:
