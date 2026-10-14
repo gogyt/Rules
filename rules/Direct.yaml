@@ -1,8 +1,6 @@
 # 根据个人上网习惯收录的漏网之鱼Direct列表
-# Aethersailor's Direct list：https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/rule/Custom_Direct_Classical.yaml
-# REPO: https://raw.githubusercontent.com/gog-xie/clash/refs/heads/main/rule/My_Direct.yaml
-# Direct REPO: https://testingcf.jsdelivr.net/gh/gog-xie/clash@main/rule/My_Direct.yaml
-# TOTAL:134
+# REPO: https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/rule/Direct.yaml
+# TOTAL:181
 payload:
   - DOMAIN-SUFFIX,docker.amingg.com
   - DOMAIN-SUFFIX,docker-cf.mrs.1ms.run
@@ -59,14 +57,10 @@ payload:
   - DOMAIN-SUFFIX,yuneu.com
   - DOMAIN-SUFFIX,zzyhh.top
   - DOMAIN-SUFFIX,cookielaw.org
-  - DOMAIN-SUFFIX,jsdelivr.com
   - DOMAIN-SUFFIX,66jc.top
-  - DOMAIN-SUFFIX,jueduibupao.top
-  - DOMAIN-SUFFIX,xxxyun.top
   - DOMAIN-SUFFIX,6bnw.top
   - DOMAIN-SUFFIX,whtjdasha.com
   - DOMAIN-SUFFIX,iconify.design
-  - DOMAIN-SUFFIX,unpkg.com
   - DOMAIN-SUFFIX,simplesvg.com
   - DOMAIN-SUFFIX,omdbapi.com
   - DOMAIN-SUFFIX,adjust.com
@@ -124,17 +118,75 @@ payload:
   - DOMAIN-SUFFIX,testingcf.jsdelivr.net
   - DOMAIN-SUFFIX,nimenshishangdi.cc
   - DOMAIN-SUFFIX,fastnb.top
+  - DOMAIN-SUFFIX,nbfast.cc
   - DOMAIN-SUFFIX,sidhub.cc
   - DOMAIN-SUFFIX,seeduck.cc
   - DOMAIN-SUFFIX,hubdog.cc
-  - DOMAIN-SUFFIX,liangxin.xyz
-  - DOMAIN-SUFFIX,liangxin1.xyz
   - DOMAIN-SUFFIX,idsduf.com
   - DOMAIN-KEYWORD,synology
-  - DOMAIN-SUFFIX,xn--9kqz23b19z.com
   - DOMAIN-SUFFIX,jueduibupao.top
-  - DOMAIN-SUFFIX,xxxyun.top
   - DOMAIN-SUFFIX,wzsgyy.com
+  - DOMAIN-SUFFIX,adtidy.org
+  - DOMAIN-SUFFIX,zimuku.org 
+  - DOMAIN-SUFFIX,xxxyun.top
+  - DOMAIN-SUFFIX,lxy1015.top
+  - DOMAIN-SUFFIX,lxyun.xyz
+  - DOMAIN-SUFFIX,777078.xyz
+  - DOMAIN-SUFFIX,7770008.xyz
+  - DOMAIN-SUFFIX,7770006.xyz
+  - DOMAIN-SUFFIX,liangxin.xyz
+  - DOMAIN-SUFFIX,liangxin1.xyz  
+  - DOMAIN-SUFFIX,icones.js.org
+  - DOMAIN-SUFFIX,tineco.com
+  - DOMAIN-SUFFIX,snssdk.com
+  - DOMAIN-SUFFIX,cilixiong.uk
+  - DOMAIN-SUFFIX,cilixiong.xyz
+  
+  - DOMAIN-SUFFIX,ghm.078465.xyz
+  - DOMAIN-SUFFIX,gh.monlor.com
+  - DOMAIN-SUFFIX,gh.idayer.com
+  - DOMAIN-SUFFIX,ghproxy.monkeyray.net
+  - DOMAIN-SUFFIX,github.tbap.top
+  - DOMAIN-SUFFIX,down.mxw.xx.kg
+  - DOMAIN-SUFFIX,cdn.akaere.online
+  - DOMAIN-SUFFIX,gh-proxy.com
+  - DOMAIN-SUFFIX,gh.jasonzeng.dev
+  - DOMAIN-SUFFIX,ghfast.top
+  - DOMAIN-SUFFIX,git.yylx.win
+  - DOMAIN-SUFFIX,update.hwdns.net
+  
+# Steam_CDN
+  - DOMAIN-SUFFIX,steampowered.com
+  - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
+  - DOMAIN-SUFFIX,steamserver.net
+
+# Steam_CDN_IP
+  - IP-CIDR,103.10.124.0/23,no-resolve
+  - IP-CIDR,103.28.54.0/24,no-resolve
+  - IP-CIDR,146.66.152.0/24,no-resolve
+  - IP-CIDR,146.66.155.0/24,no-resolve
+  - IP-CIDR,153.254.86.0/24,no-resolve
+  - IP-CIDR,155.133.224.0/22,no-resolve
+  - IP-CIDR,155.133.230.0/24,no-resolve
+  - IP-CIDR,155.133.232.0/23,no-resolve
+  - IP-CIDR,155.133.234.0/24,no-resolve
+  - IP-CIDR,155.133.236.0/22,no-resolve
+  - IP-CIDR,155.133.240.0/23,no-resolve
+  - IP-CIDR,155.133.244.0/23,no-resolve
+  - IP-CIDR,155.133.246.0/24,no-resolve
+  - IP-CIDR,155.133.248.0/21,no-resolve
+  - IP-CIDR,162.254.192.0/21,no-resolve
+  - IP-CIDR,185.25.182.0/23,no-resolve
+  - IP-CIDR,190.217.32.0/22,no-resolve
+  - IP-CIDR,192.69.96.0/22,no-resolve
+  - IP-CIDR,205.185.194.0/24,no-resolve
+  - IP-CIDR,205.196.6.0/24,no-resolve
+  - IP-CIDR,208.64.200.0/22,no-resolve
+  - IP-CIDR,208.78.164.0/22,no-resolve
+  - IP-CIDR,45.121.184.0/24,no-resolve
+
+  - DST-PORT,7844
+  - SRC-PORT,41641
   
   - IP-CIDR,220.130.197.210/32,no-resolve
   - IP-CIDR,234.33.157.217/32,no-resolve
