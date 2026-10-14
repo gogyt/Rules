@@ -1,5 +1,5 @@
 # 根据个人上网习惯收录的漏网之鱼Direct列表
-# REPO: https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/rule/Direct.yaml
+# REPO: https://raw.githubusercontent.com/gogyt/Rules/refs/heads/main/rules/Direct.yaml
 # TOTAL:181
 payload:
   - DOMAIN-SUFFIX,docker.amingg.com
