@@ -1,4 +1,4 @@
-# https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/rule/Custom_Proxy_Domain.list
+# https://raw.githubusercontent.com/gogyt/Rules/refs/heads/main/rules/Custom_Proxy_Domain.list
 
 +.themoviedb.org
 # +.tmdb.org
