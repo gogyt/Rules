@@ -1,0 +1,31 @@
+
+# 小米广告主域名
++.ad.mi.com
++.ad.xiaomi.com
+
+# PatchWall Pandora 桌面广告、开机广告、商品推荐
++.tat.pandora.xiaomi.com
++.stat.pandora.xiaomi.com
++.mishop.pandora.xiaomi.com
++.dvb.pandora.xiaomi.com
++.bss.pandora.xiaomi.com
++.de.pandora.xiaomi.com
++.jellyfish.pandora.xiaomi.com
+
+# 行为埋点、数据上报、A/B测试
++.data.mistat.xiaomi.com
++.tracking.miui.com
++.mitv.tracking.miui.com
++.adv.sec.miui.com
+
+# Gitv银河TV广告埋点
++.t7z.cupid.ptqy.gitv.tv
+
+# 酷云 OTT 第三方收视统计
++.logonext.tv.kuyun.com
++.config.kuyun.com
+
+# 奇异果(爱奇艺TV版)APP广告（可选，不需要可删除这3行）
++.ad.hpplay.cn
++.adc.hpplay.cn
++.adcdn.hpplay.cn
