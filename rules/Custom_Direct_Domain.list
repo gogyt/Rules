@@ -94,7 +94,14 @@
 +.koolcenter.com
 +.jsdelivr.com
 +.jsdelivr.net
++.jsdmirror.com
++.jsdmirror.cn
++.cdn.jsdelivr.net
 +.testingcf.jsdelivr.net
++.gcore.jsdelivr.net
++.fastly.jsdelivr.net
++.cdn.jsdmirror.com
++.cdn.jsdmirror.cn
 +.nimenshishangdi.cc
 +.fastnb.top
 +.nbfast.cc
@@ -121,11 +128,10 @@
 +.cilixiong.xyz
 +.cilixiong.org
 +.agrd-tm.com
-+.jsdmirror.com
-+.jsdmirror.cn
 +.xiamp.net
 +.tanx.com
 +.niubifast.cc
++.woyaosongwaimai.top
 
 # github代理  
 +.ghm.078465.xyz
