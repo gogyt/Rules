@@ -1,6 +1,21 @@
 # 根据个人上网习惯手动收录的漏网之鱼Direct列表
 # REPO: https://raw.githubusercontent.com/gogyt/Rules/refs/heads/main/rules/Custom_Direct_Domain.list
 
++.nimenshishangdi.cc
++.fastnb.top
++.nbfast.cc
++.niubifast.cc
++.woyaosongwaimai.top
+
++.xxxyun.top
++.lxy1015.top
++.lxyun.xyz
++.777078.xyz
++.7770008.xyz
++.7770006.xyz
++.liangxin.xyz
++.liangxin1.xyz
+
 +.docker.amingg.com
 +.docker-cf.mrs.1ms.run
 +.dingtalk.com
@@ -102,9 +117,6 @@
 +.fastly.jsdelivr.net
 +.cdn.jsdmirror.com
 +.cdn.jsdmirror.cn
-+.nimenshishangdi.cc
-+.fastnb.top
-+.nbfast.cc
 +.sidhub.cc
 +.seeduck.cc
 +.hubdog.cc
@@ -113,14 +125,6 @@
 +.wzsgyy.com
 +.adtidy.org
 +.zimuku.org 
-+.xxxyun.top
-+.lxy1015.top
-+.lxyun.xyz
-+.777078.xyz
-+.7770008.xyz
-+.7770006.xyz
-+.liangxin.xyz
-+.liangxin1.xyz
 +.icones.js.org
 +.tineco.com
 +.snssdk.com
@@ -130,8 +134,6 @@
 +.agrd-tm.com
 +.xiamp.net
 +.tanx.com
-+.niubifast.cc
-+.woyaosongwaimai.top
 +.acmsz.top
 
 # github代理  
